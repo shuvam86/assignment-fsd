@@ -50,6 +50,7 @@ mongoose
     console.error("Error connecting to MongoDB:", err);
   });
 
+  
 const User = mongoose.model(
   "User",
   new mongoose.Schema({
