@@ -23,6 +23,7 @@ app.post("/kk", async (req, res) => {
       password,
       confirmPassword,
     });
+    console.log("uuuuuuuuu", user);
 
     try {
       await user.save();
@@ -39,9 +40,10 @@ app.post("/kk", async (req, res) => {
 });
 
 mongoose
-  .connect("mongodb://localhost:27017/test", {
+  .connect("mongodb://localhost:27017/myapp", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    // bufferCommands: false,
   })
   .then(() => {
     console.log("Connected to MongoDB");
@@ -50,7 +52,6 @@ mongoose
     console.error("Error connecting to MongoDB:", err);
   });
 
-  
 const User = mongoose.model(
   "User",
   new mongoose.Schema({
