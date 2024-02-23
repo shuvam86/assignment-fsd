@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #edecf4;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    margin: 45px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .left {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .img {
+    width: 95%;
+    height: 95%;
+    margin-left: 5%;
+  }
+
+  .hr {
+    width: 55px;
+    height: 3px;
+    background-color: white;
+    margin-left: 44%;
+  }
+
+  .left .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 95%;
+    height: 50%;
+    padding: 5%;
+  }
+
+  .left .overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .left .overlay p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 475px;
+  }
+
+  .right {
+    flex: 1;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .right h2 {
+    font-size: 40px;
+    color: #5731dc;
+    margin-bottom: 10px;
+  }
+
+  .right p {
+    font-size: 16px;
+    color: #5731dc;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .sign-in-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+  }
+
+  .right form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right form input {
+    width: 95%;
+    height: 42px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+  .right form button {
+    width: 95%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #5731dc;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .right .sign-in {
+    border: 2px solid #5731dc;
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    font-size: 14px;
+    text-decoration: none;
+    color: #5731dc;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    width: 125px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+  }
+
+  .right form .input-group {
+    display: flex;
+  }
+
+  .right form .input-group input {
+    flex: 1;
+    margin-right: 28px;
+    font-size: 15px;
+  }
